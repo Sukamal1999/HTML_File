@@ -47,16 +47,39 @@
 // }
 
 
-var li = document.getElementsByTagName('li');
-console.log(i);
-console.log(li[1]);
-li[1].textContent = "Hello 2";
-items[1].style.fontweight = 'bold';
-items[1].style.backgroundColor = 'Green' ;
+// var li = document.getElementsByTagName('li');
+// console.log(i);
+// console.log(li[1]);
+// li[1].textContent = "Hello 2";
+// items[1].style.fontweight = 'bold';
+// items[1].style.backgroundColor = 'Green' ;
 
-for(var i=0; i<li.length;i++){
-    li[i].style.backgroundColor = '#00FF00' ;
-}
+// for(var i=0; i<li.length;i++){
+//     li[i].style.backgroundColor = '#00FF00' ;
+// }
+
+//QWERY_SELECTOR
+
+var header = document.querySelector('#main-header');
+header.style.borderBottom = 'solid 4px #ccc';
+
+var input = Document.querySelector('input');
+input.value = 'Hello World'
+
+var submit = document.querySelector('input[type="submit"]');
+submit.value="SEND"
+
+var item = document.querySelector('.list-group-item');
+item.style.color ='red';
+
+var lastItem =document.querySelector
+('.list-group=item:las-child');
+lastItem.style.color = 'blue';
+
+var secondItem =document.querySelector
+('.list-group=item:nth-child(2)');
+secondItem.style.color = 'green';
+
 
 
 
