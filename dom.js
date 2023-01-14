@@ -32,19 +32,32 @@
 // headerTitle.style.borderBottom = 'solid 3px #000' ;
 // header.style.borderBottom = 'solid 3px #000' ;
 
-var items = document.getElementsByClassName('list-group-item');
-console.log(items);
-console.log(items[1]);
-items[1].textContent = "Hello 2";
+// var items = document.getElementsByClassName('list-group-item');
+// console.log(items);
+// console.log(items[1]);
+// items[1].textContent = "Hello 2";
+// items[1].style.fontweight = 'bold';
+// items[1].style.backgroundColor = 'Green' ; 
+
+
+// for(var i=0;i<items.lenght;i++)
+// {
+//     items.style.backgroundColor = '#00FF00';
+
+// }
+
+
+var li = document.getElementsByTagName('li');
+console.log(i);
+console.log(li[1]);
+li[1].textContent = "Hello 2";
 items[1].style.fontweight = 'bold';
-items[1].style.backgroundColor = 'Green' ; 
+items[1].style.backgroundColor = 'Green' ;
 
-
-for(var i=0;i<items.lenght;i++)
-{
-    items.style.backgroundColor = '#00FF00';
-
+for(var i=0; i<li.length;i++){
+    li[i].style.backgroundColor = '#00FF00' ;
 }
+
 
 
 
