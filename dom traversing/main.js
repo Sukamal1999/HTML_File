@@ -1,10 +1,13 @@
 var form = document.getElementById('addForm');
 var itemList = document.getElementById('items');
+var filter = document.getElementById('filter');
 
 //form submit event
 form.addEventListener('submit',addItem);
 //Delete event
 itemList.addEventListener('click',removeItem);
+//filter event
+filter.addEventListener('keyup',filterItems);
 
 //Add Item
 function addItem(e){
@@ -39,3 +42,21 @@ function removeItem(e){
        }
     }
 }
+
+//filter items
+function filterItems(e){
+    // convert text to lowercase
+    var text = e.target.value.toLowerCase();
+    //get li s
+   var items = itemList.getElementsByTagName('li');
+   //Convert to an array
+   Array.form(items).forEach(function(item){
+    var itemName = item.firstchild.textContent;
+    if(itemName.toLowerCase().indexOf(text) != -1){
+        item.style.display = 'block';
+    }
+    else{
+        item.style.display = 'none';
+    }
+    });
+   }
